@@ -1,7 +1,25 @@
-## RNN-Based Question Answering System (Script Version):
-Built a question-answering system using RNNs in PyTorch.
-Developed data preprocessing pipelines for tokenization and vocabulary handling.
-Trained an RNN model with embeddings, focusing on multi-epoch loss tracking and softmax-based response prediction.
+# Question Answering System using Recurrent Neural Networks (RNN)
+
+This project implements a neural question-answering system using Recurrent Neural Networks (RNNs) in PyTorch. It is designed to demonstrate sequence modeling capabilities in Natural Language Processing (NLP) and forms part of my broader exploration into Generative AI and neural text understanding.
+
+## 🧠 Project Highlights
+
+- Developed a **generative-style QA system** using a vanilla RNN architecture.
+- Built a **custom preprocessing pipeline** for tokenization, lowercasing, punctuation handling, and dynamic vocabulary indexing.
+- Implemented text encoding logic to convert natural language into padded index tensors using word-level tokenization.
+- Integrated **embedding layers** and RNN cells (`nn.RNN`) to learn sequential dependencies between questions and answers.
+- Trained the model over multiple epochs with **categorical cross-entropy loss** and **softmax-based prediction**, monitoring convergence using epoch-wise loss.
+- Created a **modular codebase** using Python scripts to allow easy integration of LSTM/GRU, attention mechanisms, or pretrained embeddings in future iterations.
+
+---
+
+## Tools & Technologies
+
+- **PyTorch** – Deep learning framework for model training and tensor operations
+- **NLP** – Tokenization, vocabulary building, and sequence-to-sequence modeling
+- **Python Modules** – `torch`, `pandas`, `numpy`
+- **Core Concepts** – RNN, word embeddings, classification via softmax, vocabulary handling
+
 
 ## Tech Stack:
 - Python 3.x
@@ -11,7 +29,7 @@ Trained an RNN model with embeddings, focusing on multi-epoch loss tracking and 
 
 ## Folder Structure
 
-RNN-QA-System/
+''' RNN-QA-System/
 ├── data/
 │ └── 100_Unique_QA_Dataset.csv # Your question-answer dataset
 │
@@ -25,7 +43,7 @@ RNN-QA-System/
 ├── main.py # Calls and runs the whole training pipeline
 ├── requirements.txt
 ├── .gitignore
-└── README.md
+└── README.md '''
 
 The project is structured into modular Python scripts and follows a clean pipeline:
 
@@ -33,11 +51,11 @@ The project is structured into modular Python scripts and follows a clean pipeli
 2. Text Preprocessing:Tokenizes and cleans questions and answers
 3. Vocabulary Building: Builds a word-to-index mapping
 4. Index Encoding:Converts text to sequences of indices
-5.Modeling: Defines an RNN model in PyTorch
+5. Modeling: Defines an RNN model in PyTorch
 6. Training: Trains the model using the dataset
 
 
-# #How to run the project:
+## How to run the project:
 
 1.Clone the repository
 
