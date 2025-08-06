@@ -29,16 +29,14 @@ This project implements a neural question-answering system using Recurrent Neura
 
 
 ## Folder Structure
- <pre> ``` RNN-QA-System/ ├── data/ │ └── 100_Unique_QA_Dataset.csv # Your question-answer dataset │ ├── src/ │ ├── data_loader.py # Load CSV data │ ├── preprocessing.py # Tokenization + vocab builder │ ├── tokenize.py # Index encoding for questions & answers │ ├── model.py # RNN model architecture │ └── train.py # Training loop │ ├── main.py # Calls and runs the whole training pipeline ├── requirements.txt ├── .gitignore └── README.md ``` </pre>
 
 The project is structured into modular Python scripts and follows a clean pipeline:
 
-1. Data Loading:Reads the QA dataset from a CSV
-2. Text Preprocessing:Tokenizes and cleans questions and answers
-3. Vocabulary Building: Builds a word-to-index mapping
-4. Index Encoding:Converts text to sequences of indices
-5. Modeling: Defines an RNN model in PyTorch
-6. Training: Trains the model using the dataset
+1. data_loader:Reads the QA dataset from a CSV
+2. preprocessing:Tokenizes and cleans questions and answers
+3. tokenize: Builds a word-to-index mapping and converts text to sequences of indices
+4. Model: Defines an RNN model in PyTorch
+5. training:Trains the model using the dataset
 
 
 ## How to run the project:
