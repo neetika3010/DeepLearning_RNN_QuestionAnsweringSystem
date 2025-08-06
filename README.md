@@ -2,7 +2,7 @@
 
 This project implements a neural question-answering system using Recurrent Neural Networks (RNNs) in PyTorch. It is designed to demonstrate sequence modeling capabilities in Natural Language Processing (NLP) and forms part of my broader exploration into Generative AI and neural text understanding.
 
-## 🧠 Project Highlights
+## Project Highlights
 
 - Developed a **generative-style QA system** using a vanilla RNN architecture.
 - Built a **custom preprocessing pipeline** for tokenization, lowercasing, punctuation handling, and dynamic vocabulary indexing.
@@ -25,25 +25,11 @@ This project implements a neural question-answering system using Recurrent Neura
 - Python 3.x
 - PyTorch
 - pandas, NumPy
+- scikit-learn
 
 
 ## Folder Structure
-
-''' RNN-QA-System/
-├── data/
-│ └── 100_Unique_QA_Dataset.csv # Your question-answer dataset
-│
-├── src/
-│ ├── data_loader.py # Load CSV data
-│ ├── preprocessing.py # Tokenization + vocab builder
-│ ├── tokenize.py # Index encoding for questions & answers
-│ ├── model.py # RNN model architecture
-│ └── train.py # Training loop
-│
-├── main.py # Calls and runs the whole training pipeline
-├── requirements.txt
-├── .gitignore
-└── README.md '''
+ <pre> ``` RNN-QA-System/ ├── data/ │ └── 100_Unique_QA_Dataset.csv # Your question-answer dataset │ ├── src/ │ ├── data_loader.py # Load CSV data │ ├── preprocessing.py # Tokenization + vocab builder │ ├── tokenize.py # Index encoding for questions & answers │ ├── model.py # RNN model architecture │ └── train.py # Training loop │ ├── main.py # Calls and runs the whole training pipeline ├── requirements.txt ├── .gitignore └── README.md ``` </pre>
 
 The project is structured into modular Python scripts and follows a clean pipeline:
 
@@ -74,6 +60,7 @@ pip install -r requirements.txt
 python main.py
 
 ## Future Improvements
+
 1.To add evaluation metrics (accuracy, F1, etc.)
 2.To add LSTM/GRU-based model alternatives
 3.Use pre-trained embeddings like GloVe
