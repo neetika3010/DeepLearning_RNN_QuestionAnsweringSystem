@@ -38,6 +38,14 @@ The project is structured into modular Python scripts and follows a clean pipeli
 4. Model: Defines an RNN model in PyTorch
 5. training:Trains the model using the dataset
 
+## Future Improvements: 
+
+1.To add evaluation metrics (accuracy, F1, etc.)
+2.To add LSTM/GRU-based model alternatives
+3.Use pre-trained embeddings like GloVe
+4.Implement an inference pipeline for testing new questions
+5.Deploy using a Flask or FastAPI interface
+
 
 ## How to run the project:
 
@@ -57,12 +65,7 @@ pip install -r requirements.txt
 4.Run the training pipeline
 python main.py
 
-## Future Improvements
 
-1.To add evaluation metrics (accuracy, F1, etc.)
-2.To add LSTM/GRU-based model alternatives
-3.Use pre-trained embeddings like GloVe
-4.Implement an inference pipeline for testing new questions
-5.Deploy using a Flask or FastAPI interface
+
 
 
